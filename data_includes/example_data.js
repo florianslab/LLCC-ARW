@@ -43,7 +43,7 @@ var shuffleSequence = seq("Test", "Instructions", "Preload",
                           randomize("First16"),randomize("Second16"),
                           "ExpItem"+writtenOrAudioAdvice,randomize("Third16"),randomize("Fourth16"),
                           "DistItem"+writtenOrAudioAdvice,randomize( "Fifth16"),randomize("Sixth16"),
-                          "FinalScreen"+writtenOrAudioReplay,"amt");
+                          "FinalScreen"+writtenOrAudioReplay,"recall","amt");
 
 //var shuffleSequence = seq(randomize("First16"),randomize("Second16"),"ExpItem",randomize("Third16"),randomize("Fourth16"),"DistItem",randomize( "Fifth16"),randomize("Sixth16"),"FinalScreen");
 //var practiceItemTypes = ["practice"];
@@ -524,6 +524,10 @@ var items = [
     }],
 
     ["Preload", "PreloaderCheck", {}],
+
+    ["recall", "Form", {
+      html: {include: "verbatimrecallinstructions.html"}
+    }],
 
     
     // Handling MTurk
