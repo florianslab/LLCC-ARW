@@ -1,4 +1,4 @@
-var REPEATADVICE = true,
+var REPEATADVICE = false,
     ISLL = false,
     ISINS = true,
     ITEMID = 1,
@@ -380,7 +380,7 @@ var items = [
                         ]);
             
                         if ($("input:checked").length == 5 && typeof $(".Message-continue-link")[0] == "undefined")
-                          t.element.append($("<a class='Message-continue-link'>→ Click here to continue.</a>")
+                          t.element.append($("<a class='Message-continue-link'>â†’ Click here to continue.</a>")
                                            .bind("click", t.SubmitAnswers));
                     };
 
